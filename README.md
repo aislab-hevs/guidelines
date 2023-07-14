@@ -148,6 +148,10 @@ Anytime you are working on a project with more than one developer it is **ESSENT
 
 ℹ️ If you ever work in a large development company being able to manage work into Pull Requests is mandatory. If you want to work on large applications that run at scale then working in this manner is essential. It is not only beneficial to the team and product, but this skill can help you become a more senior member of a dev team - where you are able to over-see and manage the work of others!
 
+⚠️ As a general rule, only allow merging of a Pull Request at the **latest** 24 hours before the end of a Sprint. After this point, the related User Story/ies must be pushed to the next Sprint. If you have to rush to merge and don't review and test things properly then the code and the end product will not be good. 
+
+☠️ Last minute bugs and changes is also a huge source of **stress**. It is not fair to expect your colleagues to check/test/fix your work at the last minute, so please don't expect them to, and then hopefully they will treat you the same way! It's absolutely fine to push User Stories to the next Sprint, so do that instead!
+
 
 ### 🐞 2.4 Bug Reporting
 
