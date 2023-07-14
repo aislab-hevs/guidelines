@@ -83,20 +83,7 @@ TRAEFIK_NETWORK=dev
 
 GitHub is great, try and use it's features! It would be nice if we had access to GitHub Pro but it still has many, many great features that not everybody uses.
 
-### 🐞 2.1 Bug Reporting
-
-GitHub repositories have an "Issues" tab by default - try using it, it's pretty great! You can create tags to help organise any bugs, crashes or issues found in the product, and it is very accessible even to people that aren't developers!
-
-It works similarly to many other reporting systems you can assign people to bugs and update their statuses - this let's you track the lifecycle of a problem from its discovery to its (hopeful) death.
-
-Try and remember the best-practises for reporting bugs - you can even add a section on your README if you want about how to report problems in your application. Include at bare minimum the following pieces of information :
-
-1. **The expected behavior** (what should happen)
-2. **The observed behavior** (what actually happens)
-3. **Steps to reproduce the problem** (how you made it happen)
-4. **What environment did the problem occur in** (what version, browser, OS etc.)
-
-### 🌳 2.2 Branches
+### 🌳 2.1 Branches
 
 When you start working on a new feature, bug fix or something else, create a new branch! When there are multiple people working on the project at the same time this is absolutely imperative, please get into the habit of doing it, even if you are working alone! We do this to keep our changes organised, separated and understandable.
 
@@ -123,6 +110,32 @@ Once you have finished working on your branch you can then do one of two things,
 
 ⚠️ Sometimes it is OK to make small commits to the main branch to quickly change things. However, if you see anyone making large changes to the main branch of a project then please ask them to stop. Committing directly to main works just fine, until it doesn't. If you make a mistake on the main branch and break the application it can be very difficult to detect, fix and repair unless you are very experienced with the git CLI.
 
+### ⌨️ 2.4 Committing
+
+Committing is a really important part of developing software in a maintainable & professional way, so it is important to do it correctly!
+
+Generally it is a good practice to commit every time you reach a **checkpoint** in your code where something works correctly, even if it is not the fully functional feature. For example, if I am developing a web form that saves some data, I could add the inputs and labels without any functions, then commit. This way if I start adding the functionalities and I realize my approach isn't working, I have a checkpoint that I can **roll-back** to where I know everything is working correctly.
+
+It is a really bad idea to add too much stuff into a single commit, imagine if the changes break the application correctly, there are then no checkpoints for you to go back to. If you had broken it down into smaller commits, you can roll them back, one-by-one, and find which commit created the problem.
+
+The last important thing about commits is the **commit message**. If you break your work down into small chunks, this is easy! Just describe the contained work in a few words! Another cool thing you can do with commit messages is to add a small "tag" to the start, this way you can read through the list of commits and find specific types of work very easily.
+
+😎 Here are a few **good** examples : 
+
+```feat: added the inputs and labels to the User form ```
+```fix: corrected position of the name input in the User form```
+```refactor: improved the readibility of the User form```
+```docs: updated the documentation with details on the User form```
+
+💩 Here are a few **bad** examples:
+
+```worked on the user form```
+```added inputs and labels```
+```updated the user page```
+```corrected the input position```
+
+*These examples are bad, because you have to **read the code** to know exactly **where** and **what** the changes are. Without the tag it is also difficult to know **why** they made the commit!*
+
 ### 🔎 2.3 Pull Requests
 
 Anytime you are working on a project with more than one developer it is **ESSENTIAL** that you use Pull Requests. The idea is that, once you have finished your work, another developer looks at what you have done, reviews it, and then lets you merge your changes. This is advantageous for many reasons :
@@ -134,6 +147,21 @@ Anytime you are working on a project with more than one developer it is **ESSENT
 * The project is no longer a big secret that only one person understands
 
 ℹ️ If you ever work in a large development company being able to manage work into Pull Requests is mandatory. If you want to work on large applications that run at scale then working in this manner is essential. It is not only beneficial to the team and product, but this skill can help you become a more senior member of a dev team - where you are able to over-see and manage the work of others!
+
+
+### 🐞 2.4 Bug Reporting
+
+GitHub repositories have an "Issues" tab by default - try using it, it's pretty great! You can create tags to help organise any bugs, crashes or issues found in the product, and it is very accessible even to people that aren't developers!
+
+It works similarly to many other reporting systems you can assign people to bugs and update their statuses - this let's you track the lifecycle of a problem from its discovery to its (hopeful) death.
+
+Try and remember the best-practises for reporting bugs - you can even add a section on your README if you want about how to report problems in your application. Include at bare minimum the following pieces of information :
+
+1. **The expected behavior** (what should happen)
+2. **The observed behavior** (what actually happens)
+3. **Steps to reproduce the problem** (how you made it happen)
+4. **What environment did the problem occur in** (what version, browser, OS etc.)
+
 
 ## 🙏 3. On-boarding
 
