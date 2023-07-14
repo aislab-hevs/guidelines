@@ -122,17 +122,17 @@ The last important thing about commits is the **commit message**. If you break y
 
 😎 Here are a few **good** examples : 
 
-```feat: added the inputs and labels to the User form ```
-```fix: corrected position of the name input in the User form```
-```refactor: improved the readibility of the User form```
-```docs: updated the documentation with details on the User form```
+* ```feat: added the inputs and labels to the User form ```
+* ```fix: corrected position of the name input in the User form```
+* ```refactor: improved the readibility of the User form```
+* ```docs: updated the documentation with details on the User form```
 
 💩 Here are a few **bad** examples:
 
-```worked on the user form```
-```added inputs and labels```
-```updated the user page```
-```corrected the input position```
+* ```worked on the user form```
+* ```added inputs and labels```
+* ```updated the user page```
+* ```corrected the input position```
 
 *These examples are bad, because you have to **read the code** to know exactly **where** and **what** the changes are. Without the tag it is also difficult to know **why** they made the commit!*
 
